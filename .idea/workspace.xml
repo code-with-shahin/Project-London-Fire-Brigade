@@ -1,18 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6721ff7-2800-40cd-84cf-66e0f90e302e" name="Changes" comment="" />
+    <list default="true" id="d6721ff7-2800-40cd-84cf-66e0f90e302e" name="Changes" comment="importing dataset">
+      <change beforePath="$PROJECT_DIR$/.idea/Project-London-Fire-Brigade.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Project-London-Fire-Brigade.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="7" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "code-with-shahin"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/code-with-shahin/Project-London-Fire-Brigade.git",
+    "accountId": "72f398b1-2a14-4afe-a58e-c0481f0c435a"
+  }
+}]]></component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0032625101889212" />
+      <entry key="MS500" value="1.377262216689171" />
+      <entry key="S2" value="2.5027053693456702" />
+      <entry key="S5" value="3.2307617975693113" />
+      <entry key="S10" value="3.5780692779110823" />
+      <entry key="S30" value="3.8499895687696344" />
+      <entry key="S60" value="3.9237537195659136" />
+      <entry key="M2" value="3.980769190661229" />
+      <entry key="M5" value="6.896736269280722" />
+      <entry key="M10" value="19.60883031401378" />
+      <entry key="M15" value="31.347551248666623" />
+      <entry key="M30" value="51.92267285354202" />
+      <entry key="H1" value="67.44451322752028" />
+      <entry key="H2" value="77.00162152593344" />
+      <entry key="H4" value="82.3077666104456" />
+      <entry key="D1" value="87.0233136480406" />
+      <entry key="W1" value="87.85977235346185" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.9491440922581885" />
+      <entry key="MS500" value="1.3599782034762868" />
+      <entry key="S2" value="2.4909745554399874" />
+      <entry key="S5" value="3.2241890086060345" />
+      <entry key="S10" value="3.574351685504659" />
+      <entry key="S30" value="3.8486401620081034" />
+      <entry key="S60" value="3.9230642322077416" />
+      <entry key="M2" value="3.9804198424469512" />
+      <entry key="M5" value="6.896545612755077" />
+      <entry key="M10" value="19.6086249753057" />
+      <entry key="M15" value="31.347346646641693" />
+      <entry key="M30" value="51.92251121048314" />
+      <entry key="H1" value="67.44441002072337" />
+      <entry key="H2" value="77.00156303071805" />
+      <entry key="H4" value="82.30773544961228" />
+      <entry key="D1" value="87.02330817118515" />
+      <entry key="W1" value="87.85977156387273" />
+    </decayedShown>
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 6,
@@ -26,13 +107,21 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.main.executor": "Run",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "master",
     "junie.onboarding.icon.badge.shown": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "to.speed.mode.migration.done": "true"
   }
 }]]></component>
@@ -51,9 +140,33 @@
       <option name="presentableId" value="Default" />
       <updated>1781470342423</updated>
     </task>
+    <task id="LOCAL-00001" summary="importing dataset">
+      <option name="closed" value="true" />
+      <created>1781471984101</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1781471984101</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="importing dataset" />
+    <option name="LAST_COMMIT_MESSAGE" value="importing dataset" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
