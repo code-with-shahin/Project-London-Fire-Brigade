@@ -1,4 +1,3 @@
-# This is a sample Python script.
 import matplotlib
 import numpy as np
 import pandas as pd

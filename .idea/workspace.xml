@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6721ff7-2800-40cd-84cf-66e0f90e302e" name="Changes" comment="importing dataset">
-      <change beforePath="$PROJECT_DIR$/.idea/Project-London-Fire-Brigade.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Project-London-Fire-Brigade.iml" afterDir="false" />
+    <list default="true" id="d6721ff7-2800-40cd-84cf-66e0f90e302e" name="Changes" comment="summary tables">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/project.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="16" />
+    <option name="cachedIndexableFilesCount" value="13" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -38,23 +37,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000000000400335" />
-      <entry key="MS500" value="1.0083269276255309" />
-      <entry key="S2" value="1.3020794608474855" />
-      <entry key="S5" value="1.619510252683078" />
-      <entry key="S10" value="1.7874207928573274" />
-      <entry key="S30" value="2.1529091726093865" />
-      <entry key="S60" value="3.71646387995839" />
-      <entry key="M2" value="7.628065856622614" />
-      <entry key="M5" value="15.495216733478527" />
-      <entry key="M10" value="28.89530098947751" />
-      <entry key="M15" value="41.08559116032933" />
-      <entry key="M30" value="63.58252382128433" />
-      <entry key="H1" value="81.41917026822522" />
-      <entry key="H2" value="92.72166525158367" />
-      <entry key="H4" value="99.09299783801372" />
-      <entry key="D1" value="104.80971885260287" />
-      <entry key="W1" value="105.82897593081842" />
+      <entry key="MS100" value="1.3397648583627573" />
+      <entry key="MS500" value="2.0511356252540955" />
+      <entry key="S2" value="3.2355435510668253" />
+      <entry key="S5" value="4.071561136044279" />
+      <entry key="S10" value="4.48606059104899" />
+      <entry key="S30" value="4.816103815291353" />
+      <entry key="S60" value="4.906376590573654" />
+      <entry key="M2" value="4.961422919939722" />
+      <entry key="M5" value="6.009845442792883" />
+      <entry key="M10" value="12.436150267309658" />
+      <entry key="M15" value="21.630605923182912" />
+      <entry key="M30" value="45.457199502205725" />
+      <entry key="H1" value="69.94745304721076" />
+      <entry key="H2" value="87.81330061990234" />
+      <entry key="H4" value="98.64889209500028" />
+      <entry key="D1" value="108.8272932452559" />
+      <entry key="W1" value="110.68669213259237" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -76,23 +75,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="8.244869530752796E-7" />
-      <entry key="MS500" value="0.06074869667625135" />
-      <entry key="S2" value="0.576866789564518" />
-      <entry key="S5" value="1.12066323081328" />
-      <entry key="S10" value="1.473773787143436" />
-      <entry key="S30" value="2.029238697298527" />
-      <entry key="S60" value="3.651380061175138" />
-      <entry key="M2" value="7.5940906768097145" />
-      <entry key="M5" value="15.480931371831199" />
-      <entry key="M10" value="28.887902493453876" />
-      <entry key="M15" value="41.0805522988959" />
-      <entry key="M30" value="63.579919890444486" />
-      <entry key="H1" value="81.41783736902603" />
-      <entry key="H2" value="92.72098930848595" />
-      <entry key="H4" value="99.09265722819566" />
-      <entry key="D1" value="104.80966169294446" />
-      <entry key="W1" value="105.8289677552257" />
+      <entry key="MS100" value="0.6605922630667711" />
+      <entry key="MS500" value="1.8453853909979825" />
+      <entry key="S2" value="3.1770515679754348" />
+      <entry key="S5" value="4.046962379014801" />
+      <entry key="S10" value="4.473490327690785" />
+      <entry key="S30" value="4.8118442752689266" />
+      <entry key="S60" value="4.90423738782591" />
+      <entry key="M2" value="4.960312373439668" />
+      <entry key="M5" value="6.0084675668860825" />
+      <entry key="M10" value="12.434029063617897" />
+      <entry key="M15" value="21.628422309613715" />
+      <entry key="M30" value="45.45547089134117" />
+      <entry key="H1" value="69.94635396775848" />
+      <entry key="H2" value="87.81267899759881" />
+      <entry key="H4" value="98.64856124372042" />
+      <entry key="D1" value="108.82723512915578" />
+      <entry key="W1" value="110.6866837548206" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -156,7 +155,15 @@
       <option name="project" value="LOCAL" />
       <updated>1781474223985</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="summary tables">
+      <option name="closed" value="true" />
+      <created>1781517122895</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1781517122895</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,14 +171,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="importing dataset" />
-    <option name="LAST_COMMIT_MESSAGE" value="importing dataset" />
+    <MESSAGE value="summary tables" />
+    <option name="LAST_COMMIT_MESSAGE" value="summary tables" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>6</line>
+          <url>file://$PROJECT_DIR$/project.py</url>
+          <line>5</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
