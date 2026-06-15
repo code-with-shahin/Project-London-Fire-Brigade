@@ -7,6 +7,8 @@ import seaborn as sns
 import statsmodels.api as sm
 import os
 
+# 1. Import Data
+
 # LOAD INCIDENT DATA
 
 incident_files = [
@@ -50,4 +52,42 @@ mobilisation = pd.concat(mobilisation_dfs, ignore_index=True)
 
 print("Mobilisation shape:", mobilisation.shape)
 print(mobilisation.head())
+
+# 2. Summary Tables
+
+# 2.1 Incidents
+
+# Creating summary table:
+
+# Making sure pandas doesn't wrap columns:
+pd.set_option('display.max_columns', None)  # Show all columns
+pd.set_option('display.width', 1000)       # Set display width
+
+summary = pd.DataFrame({
+    "Column Name": incidents.columns,
+    "Data Type": incidents.dtypes.values,
+    "Missing Values": incidents.isnull().sum().values,
+    "Missing %": incidents.isnull().mean().values * 100,
+    "Unique Values": incidents.nunique().values
+})
+
+print(summary)
+
+# 2.2 Mobilisation
+
+# Creating summary table:
+
+# Making sure pandas doesn't wrap columns:
+pd.set_option('display.max_columns', None)  # Show all columns
+pd.set_option('display.width', 1000)       # Set display width
+
+summary = pd.DataFrame({
+    "Column Name": mobilisation.columns,
+    "Data Type": mobilisation.dtypes.values,
+    "Missing Values": mobilisation.isnull().sum().values,
+    "Missing %": mobilisation.isnull().mean().values * 100,
+    "Unique Values": mobilisation.nunique().values
+})
+
+print(summary)
 
