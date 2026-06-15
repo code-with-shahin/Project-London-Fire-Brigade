@@ -82,3 +82,5 @@ Which boroughs have the fastest/slowest response?
 **3️. Incident type comparison (max/min):**
 
 Example types: Fire, False alarm, Special service…
+
+![Executive Dashboard](images/dashboard.png)
