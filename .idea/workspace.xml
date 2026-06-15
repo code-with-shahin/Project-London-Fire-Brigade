@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6721ff7-2800-40cd-84cf-66e0f90e302e" name="Changes" comment="summary tables">
+    <list default="true" id="d6721ff7-2800-40cd-84cf-66e0f90e302e" name="Changes" comment="added images">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.py" beforeDir="false" afterPath="$PROJECT_DIR$/project.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,7 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="13" />
+    <option name="cachedIndexableFilesCount" value="17" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -36,23 +37,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.034537702344438" />
-      <entry key="MS500" value="2.747536450405893" />
-      <entry key="S2" value="10.334566128697986" />
-      <entry key="S5" value="17.789104540354316" />
-      <entry key="S10" value="22.10141980529523" />
-      <entry key="S30" value="25.844445870137058" />
-      <entry key="S60" value="27.036590205251354" />
-      <entry key="M2" value="27.827689278330414" />
-      <entry key="M5" value="28.472635127525155" />
-      <entry key="M10" value="29.265522528739645" />
-      <entry key="M15" value="31.511309916578497" />
-      <entry key="M30" value="44.9747025975219" />
-      <entry key="H1" value="70.54330278687094" />
-      <entry key="H2" value="96.68995152915673" />
-      <entry key="H4" value="115.61467593492767" />
-      <entry key="D1" value="135.4934684399181" />
-      <entry key="W1" value="139.3444441882594" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0000023975627412" />
+      <entry key="S2" value="1.0393497969094754" />
+      <entry key="S5" value="1.2741428971469735" />
+      <entry key="S10" value="1.5235865747865012" />
+      <entry key="S30" value="1.810403466944473" />
+      <entry key="S60" value="2.0529798334273996" />
+      <entry key="M2" value="3.291537110313201" />
+      <entry key="M5" value="10.693704154626333" />
+      <entry key="M10" value="20.484173082850134" />
+      <entry key="M15" value="27.11986005258724" />
+      <entry key="M30" value="44.67479542071488" />
+      <entry key="H1" value="72.95322678997427" />
+      <entry key="H2" value="102.36560275731084" />
+      <entry key="H4" value="124.20853141461589" />
+      <entry key="D1" value="147.62749699623907" />
+      <entry key="W1" value="152.2170699411945" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -74,23 +75,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9852687877963788" />
-      <entry key="MS500" value="2.7181716462631837" />
-      <entry key="S2" value="10.305537281267659" />
-      <entry key="S5" value="17.76876819678497" />
-      <entry key="S10" value="22.08870378380113" />
-      <entry key="S30" value="25.839450832426486" />
-      <entry key="S60" value="27.033931300841154" />
-      <entry key="M2" value="27.826281373919873" />
-      <entry key="M5" value="28.472037364319505" />
-      <entry key="M10" value="29.265124071743273" />
-      <entry key="M15" value="31.510832025543912" />
-      <entry key="M30" value="44.97398800926307" />
-      <entry key="H1" value="70.54259731006917" />
-      <entry key="H2" value="96.68944615497954" />
-      <entry key="H4" value="115.61437237346246" />
-      <entry key="D1" value="135.49340939534565" />
-      <entry key="W1" value="139.34443552579162" />
+      <entry key="MS100" value="0.8066417592221263" />
+      <entry key="MS500" value="0.9579374770415362" />
+      <entry key="S2" value="1.0280814550368294" />
+      <entry key="S5" value="1.2682252829596752" />
+      <entry key="S10" value="1.5198818818052364" />
+      <entry key="S30" value="1.8088822796723882" />
+      <entry key="S60" value="2.052086002505824" />
+      <entry key="M2" value="3.290805295559714" />
+      <entry key="M5" value="10.692963318520919" />
+      <entry key="M10" value="20.483519641153073" />
+      <entry key="M15" value="27.119211187124357" />
+      <entry key="M30" value="44.67403450305336" />
+      <entry key="H1" value="72.9524927544231" />
+      <entry key="H2" value="102.36506782667922" />
+      <entry key="H4" value="124.20820539769699" />
+      <entry key="D1" value="147.6274326440715" />
+      <entry key="W1" value="152.21706047413903" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -102,27 +103,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.main.executor": "Run",
+    "Python.project.executor": "Run",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "junie.onboarding.icon.badge.shown": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -178,7 +180,15 @@
       <option name="project" value="LOCAL" />
       <updated>1781535616090</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added images">
+      <option name="closed" value="true" />
+      <created>1781552079054</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1781552079055</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,17 +197,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="importing dataset" />
     <MESSAGE value="summary tables" />
-    <option name="LAST_COMMIT_MESSAGE" value="summary tables" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/project.py</url>
-          <line>5</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="added images" />
+    <option name="LAST_COMMIT_MESSAGE" value="added images" />
   </component>
 </project>

@@ -90,3 +90,75 @@ summary = pd.DataFrame({
 
 print(summary)
 
+# 3. Pre-Prep for Joining Data
+# 3.1 Incident Records
+
+# filter only years from 2015 to 2023
+incidents = incidents.loc[(incidents["CalYear"] >= 2015) & (incidents["CalYear"] <= 2023)]
+
+# show column names
+incidents.columns
+
+# Drop redundant columns
+incidents = incidents.drop([
+    "TimeOfCall",
+    "SpecialServiceType",
+    "AddressQualifier",
+    "Postcode_full",
+    "UPRN",
+    "USRN",
+    "IncGeo_BoroughCode",
+    "ProperCase",
+    "IncGeo_WardName",
+    "IncGeo_WardCode",
+    "Easting_m",
+    "Northing_m",
+    "Latitude",
+    "Longitude",
+    "FRS",
+    "NumStationsWithPumpsAttending",
+    "NumPumpsAttending",
+    "SecondPumpArriving_AttendanceTime",
+    "SecondPumpArriving_DeployedFromStation",
+
+], axis=1)
+
+# display shape
+incidents.shape
+
+# Save dataset
+incidents.to_csv(
+    "data/Incidents/incidents_2015_2023.csv",
+    index=False
+)
+
+# 3.2 Mobilization Records
+
+# filter only years between 2015 and 2023
+mobilisation = mobilisation.loc[(mobilisation["CalYear"] >= 2015) & (mobilisation["CalYear"] <= 2023)]
+
+# filter only first pump
+mobilisation = mobilisation.sort_values(
+    ["IncidentNumber", "PumpOrder"]
+).drop_duplicates("IncidentNumber")
+
+# drop redundant columns
+mobilisation = mobilisation.drop([
+    "Resource_Code",
+    "AttendanceTimeSeconds",
+    "DateAndTimeLeft",
+    "DateAndTimeReturned",
+    "DeployedFromStation_Code",
+    "PlusCode_Code",
+    "BoroughName",
+    "WardName"
+], axis=1)
+
+# display shape
+mobilisation.shape
+
+# Save dataset
+mobilisation.to_csv(
+    "data/Mobilisation/mobilisation_2015_2023.csv",
+    index=False
+)
