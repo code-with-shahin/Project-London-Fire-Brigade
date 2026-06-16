@@ -162,3 +162,21 @@ mobilisation.to_csv(
     "data/Mobilisation/mobilisation_2015_2023.csv",
     index=False
 )
+
+# 4. Joining Datasets
+
+# merge incidents and mobilisation (pump order == 1)
+df_merged = incidents.merge(mobilisation, on="IncidentNumber", how = "left")
+
+df_merged.shape
+
+# double check for duplicates
+df_merged["IncidentNumber"].duplicated().sum()
+
+# save data set
+df_merged.to_csv(
+    "data/df_merged_2015_2023.csv",
+    index=False
+)
+
+

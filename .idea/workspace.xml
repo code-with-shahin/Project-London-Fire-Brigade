@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6721ff7-2800-40cd-84cf-66e0f90e302e" name="Changes" comment="added images">
+    <list default="true" id="d6721ff7-2800-40cd-84cf-66e0f90e302e" name="Changes" comment="updating datasets">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project.py" beforeDir="false" afterPath="$PROJECT_DIR$/project.py" afterDir="false" />
     </list>
@@ -14,7 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="17" />
+    <option name="cachedIndexableFilesCount" value="19" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,23 +37,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000023975627412" />
-      <entry key="S2" value="1.0393497969094754" />
-      <entry key="S5" value="1.2741428971469735" />
-      <entry key="S10" value="1.5235865747865012" />
-      <entry key="S30" value="1.810403466944473" />
-      <entry key="S60" value="2.0529798334273996" />
-      <entry key="M2" value="3.291537110313201" />
-      <entry key="M5" value="10.693704154626333" />
-      <entry key="M10" value="20.484173082850134" />
-      <entry key="M15" value="27.11986005258724" />
-      <entry key="M30" value="44.67479542071488" />
-      <entry key="H1" value="72.95322678997427" />
-      <entry key="H2" value="102.36560275731084" />
-      <entry key="H4" value="124.20853141461589" />
-      <entry key="D1" value="147.62749699623907" />
-      <entry key="W1" value="152.2170699411945" />
+      <entry key="MS100" value="1.0454366411662597" />
+      <entry key="MS500" value="1.5388687863305677" />
+      <entry key="S2" value="1.9331951220181485" />
+      <entry key="S5" value="2.881235785256602" />
+      <entry key="S10" value="4.29917092664024" />
+      <entry key="S30" value="6.347154501245274" />
+      <entry key="S60" value="7.105121013093568" />
+      <entry key="M2" value="7.5424336050416" />
+      <entry key="M5" value="8.795795134526681" />
+      <entry key="M10" value="14.126552963437927" />
+      <entry key="M15" value="20.191265618772515" />
+      <entry key="M30" value="37.99993323406605" />
+      <entry key="H1" value="67.79840336126283" />
+      <entry key="H2" value="100.68242580542906" />
+      <entry key="H4" value="126.1890344089397" />
+      <entry key="D1" value="154.41043349128716" />
+      <entry key="W1" value="160.03716546503313" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -75,23 +75,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.8066417592221263" />
-      <entry key="MS500" value="0.9579374770415362" />
-      <entry key="S2" value="1.0280814550368294" />
-      <entry key="S5" value="1.2682252829596752" />
-      <entry key="S10" value="1.5198818818052364" />
-      <entry key="S30" value="1.8088822796723882" />
-      <entry key="S60" value="2.052086002505824" />
-      <entry key="M2" value="3.290805295559714" />
-      <entry key="M5" value="10.692963318520919" />
-      <entry key="M10" value="20.483519641153073" />
-      <entry key="M15" value="27.119211187124357" />
-      <entry key="M30" value="44.67403450305336" />
-      <entry key="H1" value="72.9524927544231" />
-      <entry key="H2" value="102.36506782667922" />
-      <entry key="H4" value="124.20820539769699" />
-      <entry key="D1" value="147.6274326440715" />
-      <entry key="W1" value="152.21706047413903" />
+      <entry key="MS100" value="0.5940664039877296" />
+      <entry key="MS500" value="1.4122498821311302" />
+      <entry key="S2" value="1.8957670967565174" />
+      <entry key="S5" value="2.856297124101402" />
+      <entry key="S10" value="4.279633026149643" />
+      <entry key="S30" value="6.337482717096162" />
+      <entry key="S60" value="7.099725782101264" />
+      <entry key="M2" value="7.539578293378728" />
+      <entry key="M5" value="8.794545770728416" />
+      <entry key="M10" value="14.125757158624774" />
+      <entry key="M15" value="20.190572669055395" />
+      <entry key="M30" value="37.99922108640625" />
+      <entry key="H1" value="67.79770101715684" />
+      <entry key="H2" value="100.68189113255258" />
+      <entry key="H4" value="126.18869901844006" />
+      <entry key="D1" value="154.41036547390289" />
+      <entry key="W1" value="160.03715540976944" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -103,28 +103,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.main.executor": "Run",
-    "Python.project.executor": "Run",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "master",
-    "junie.onboarding.icon.badge.shown": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "to.speed.mode.migration.done": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.project.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -188,7 +188,15 @@
       <option name="project" value="LOCAL" />
       <updated>1781552079055</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="updating datasets">
+      <option name="closed" value="true" />
+      <created>1781553715194</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1781553715194</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +206,7 @@
     <MESSAGE value="importing dataset" />
     <MESSAGE value="summary tables" />
     <MESSAGE value="added images" />
-    <option name="LAST_COMMIT_MESSAGE" value="added images" />
+    <MESSAGE value="updating datasets" />
+    <option name="LAST_COMMIT_MESSAGE" value="updating datasets" />
   </component>
 </project>
