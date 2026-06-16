@@ -99,7 +99,7 @@ The main contribution focused on:
 - Creating advanced Power BI visualisations
 - Designing KPIs and DAX measures
 - Translating technical findings into operational insights
-- 
+
 Particular attention was given to transforming complex operational data into a clear and decision-oriented analytical narrative.
 
 # 4. Results Obtained and Benchmark Comparison
