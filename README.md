@@ -110,7 +110,7 @@ The analysis showed:
 - Westminster consistently outperforms Havering
 - Havering exhibits lower compliance rates and longer response times
 - Delays cluster in specific geographic and operational contexts
-- 
+
 The dashboard successfully identified:
 
 - Temporal stress periods
