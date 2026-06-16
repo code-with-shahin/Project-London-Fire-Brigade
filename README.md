@@ -83,6 +83,41 @@ Which boroughs have the fastest/slowest response?
 
 Example types: Fire, False alarm, Special service…
 
+# 3. Main Contribution to the Project
+
+The project was conducted collaboratively across all stages:
+
+- Data preprocessing
+- Exploratory analysis
+- KPI development
+- Dashboard design
+- Interpretation of results
+
+The main contribution focused on:
+
+- Developing the dashboard structure and storytelling
+- Creating advanced Power BI visualisations
+- Designing KPIs and DAX measures
+- Translating technical findings into operational insights
+- 
+Particular attention was given to transforming complex operational data into a clear and decision-oriented analytical narrative.
+
+# 4. Results Obtained and Benchmark Comparison
+
+The benchmark used throughout the project was the London Fire Brigade’s 6-minute response target.
+
+The analysis showed:
+- Westminster consistently outperforms Havering
+- Havering exhibits lower compliance rates and longer response times
+- Delays cluster in specific geographic and operational contexts
+- 
+The dashboard successfully identified:
+
+- Temporal stress periods
+- Geographic bottlenecks
+- High-risk scenarios
+- Structural operational inefficiencies
+
 ![Executive Dashboard](images/dashboard.png)
 ![Executive Dashboard](images/temporal_analysis.png)
 ![Executive Dashboard](images/geographical_analysis.png)
