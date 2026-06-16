@@ -86,3 +86,5 @@ Example types: Fire, False alarm, Special service…
 ![Executive Dashboard](images/dashboard.png)
 ![Executive Dashboard](images/temporal_analysis.png)
 ![Executive Dashboard](images/geographical_analysis.png)
+![Executive Dashboard](images/incident_property.png)
+![Executive Dashboard](images/key_drivers.png)

@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6721ff7-2800-40cd-84cf-66e0f90e302e" name="Changes" comment="updating datasets">
+    <list default="true" id="d6721ff7-2800-40cd-84cf-66e0f90e302e" name="Changes" comment="merging datasets">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.py" beforeDir="false" afterPath="$PROJECT_DIR$/project.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,7 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="19" />
+    <option name="cachedIndexableFilesCount" value="20" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,23 +37,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0454366411662597" />
-      <entry key="MS500" value="1.5388687863305677" />
-      <entry key="S2" value="1.9331951220181485" />
-      <entry key="S5" value="2.881235785256602" />
-      <entry key="S10" value="4.29917092664024" />
-      <entry key="S30" value="6.347154501245274" />
-      <entry key="S60" value="7.105121013093568" />
-      <entry key="M2" value="7.5424336050416" />
-      <entry key="M5" value="8.795795134526681" />
-      <entry key="M10" value="14.126552963437927" />
-      <entry key="M15" value="20.191265618772515" />
-      <entry key="M30" value="37.99993323406605" />
-      <entry key="H1" value="67.79840336126283" />
-      <entry key="H2" value="100.68242580542906" />
-      <entry key="H4" value="126.1890344089397" />
-      <entry key="D1" value="154.41043349128716" />
-      <entry key="W1" value="160.03716546503313" />
+      <entry key="MS100" value="1.0020360659391427" />
+      <entry key="MS500" value="1.2895732015486607" />
+      <entry key="S2" value="1.7335666720836618" />
+      <entry key="S5" value="1.883437513437181" />
+      <entry key="S10" value="1.939913567003467" />
+      <entry key="S30" value="1.979556101186561" />
+      <entry key="S60" value="1.990100507309319" />
+      <entry key="M2" value="2.049662738002467" />
+      <entry key="M5" value="3.2248816297338543" />
+      <entry key="M10" value="7.275045780474745" />
+      <entry key="M15" value="12.470923842636322" />
+      <entry key="M30" value="29.365436117557735" />
+      <entry key="H1" value="59.53480806448187" />
+      <entry key="H2" value="94.74906035392844" />
+      <entry key="H4" value="123.11546145983169" />
+      <entry key="D1" value="155.35795527669268" />
+      <entry key="W1" value="161.88087541400134" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -75,23 +75,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.5940664039877296" />
-      <entry key="MS500" value="1.4122498821311302" />
-      <entry key="S2" value="1.8957670967565174" />
-      <entry key="S5" value="2.856297124101402" />
-      <entry key="S10" value="4.279633026149643" />
-      <entry key="S30" value="6.337482717096162" />
-      <entry key="S60" value="7.099725782101264" />
-      <entry key="M2" value="7.539578293378728" />
-      <entry key="M5" value="8.794545770728416" />
-      <entry key="M10" value="14.125757158624774" />
-      <entry key="M15" value="20.190572669055395" />
-      <entry key="M30" value="37.99922108640625" />
-      <entry key="H1" value="67.79770101715684" />
-      <entry key="H2" value="100.68189113255258" />
-      <entry key="H4" value="126.18869901844006" />
-      <entry key="D1" value="154.41036547390289" />
-      <entry key="W1" value="160.03715540976944" />
+      <entry key="MS100" value="0.896938001196697" />
+      <entry key="MS500" value="1.2640462167482913" />
+      <entry key="S2" value="1.725752292030966" />
+      <entry key="S5" value="1.8801203538855884" />
+      <entry key="S10" value="1.9382189805257213" />
+      <entry key="S30" value="1.978982819201633" />
+      <entry key="S60" value="1.989812501757198" />
+      <entry key="M2" value="2.0494978552161096" />
+      <entry key="M5" value="3.2246496347339395" />
+      <entry key="M10" value="7.274719687876932" />
+      <entry key="M15" value="12.470545215220206" />
+      <entry key="M30" value="29.364913636187897" />
+      <entry key="H1" value="59.5342072290541" />
+      <entry key="H2" value="94.74856540395697" />
+      <entry key="H4" value="123.1151383506108" />
+      <entry key="D1" value="155.3578875223562" />
+      <entry key="W1" value="161.88086533990545" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -196,7 +196,15 @@
       <option name="project" value="LOCAL" />
       <updated>1781553715194</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="merging datasets">
+      <option name="closed" value="true" />
+      <created>1781603828089</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1781603828089</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,6 +215,7 @@
     <MESSAGE value="summary tables" />
     <MESSAGE value="added images" />
     <MESSAGE value="updating datasets" />
-    <option name="LAST_COMMIT_MESSAGE" value="updating datasets" />
+    <MESSAGE value="merging datasets" />
+    <option name="LAST_COMMIT_MESSAGE" value="merging datasets" />
   </component>
 </project>
