@@ -179,4 +179,48 @@ df_merged.to_csv(
     index=False
 )
 
+# Importing basic Python libraries
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import statsmodels.api as sm
+import os
 
+# Load dataset
+df = pd.read_csv("data/df_merged_2015_2023.csv", low_memory=False)
+
+# Display shape
+print(df.shape)
+
+# Preview data
+df.head()
+
+# Making sure pandas doesn't wrap columns:
+pd.set_option('display.max_columns', None)  # Show all columns
+pd.set_option('display.width', 1000)       # Set display width
+df.head()
+
+# create summary table
+
+# define parameters for summary table
+summary = pd.DataFrame({
+    "Column Name": df.columns,
+    "Data Type": df.dtypes.values,
+    "Missing values": df.isna().sum().values,
+    "Missing values in %": (df.isnull().sum().values) / len(df) * 100,
+    "Unique values": df.nunique().values
+})
+
+# display number of rows and columns
+rows, cols = df.shape
+
+# display summary table
+print("-------------------------")
+print("Summary table:")
+print("-------------------------\n")
+
+print("Number of rows:", rows)
+print("Number of columns:", cols)
+print("\n-------------------------\n")
+print(summary)
