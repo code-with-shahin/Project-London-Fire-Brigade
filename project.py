@@ -224,3 +224,25 @@ print("Number of rows:", rows)
 print("Number of columns:", cols)
 print("\n-------------------------\n")
 print(summary)
+
+# Pre-Cleaning
+
+# display columns to identify redundant columns
+df.columns
+
+# delete all redundant columns after merging
+cols_to_drop = [
+    "source_file_x", "source_file_y", # columns were created while loading full data for better debugging but are now redundant
+    'CalYear_y', 'HourOfCall_y',      # dupliactes of second dataset
+]
+
+df = df.drop(columns=cols_to_drop, errors="ignore")
+
+# display shape
+df.shape
+
+# Filter Boroughs
+
+df = df.loc[(df["IncGeo_BoroughName"] == "WESTMINSTER") | (df["IncGeo_BoroughName"] == "HAVERING")]
+
+
