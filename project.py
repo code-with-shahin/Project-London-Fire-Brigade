@@ -290,3 +290,35 @@ plt.title("Boxplot of First Pump Attendance Time")
 plt.xlabel("Attendance Time in seconds")
 plt.show()
 
+# Missing Values & Duplicates
+
+# calculate sum of missing values
+missing = df.isna().sum()
+
+# percentage of missing values
+missing_pct = df.isna().mean() * 100
+
+# combine into one table
+missing_summary = pd.DataFrame({
+    "Missing Values": missing,
+    "Missing Percentage (%)": missing_pct
+})
+
+# keep only columns with missing values
+missing_summary = missing_summary[missing_summary["Missing Values"] > 0]
+
+print(missing_summary)
+
+# Visualize NaNs
+# display bar plot to visualize missing values
+
+plt.figure(figsize=(10,6))
+df.isnull().sum().plot(kind="bar")
+
+# Detect Duplicates
+# Number of duplicates
+print("Number of duplicates:", df.duplicated().sum())
+
+df.columns
+
+
