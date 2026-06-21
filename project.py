@@ -321,4 +321,95 @@ print("Number of duplicates:", df.duplicated().sum())
 
 df.columns
 
+# Modification
+# Fill NaNs
+
+# Replace "NULL" with 0 in DelayCodeId column
+df.loc[:, "DelayCodeId"] = df["DelayCodeId"].fillna(0)
+
+# Replace "NULL" with 'No Delay' in DelayCode_Description column
+df.loc[:, "DelayCode_Description"] = df["DelayCode_Description"].fillna("No Delay")
+
+# "DelayCodeId" column should be an integer:
+df.loc[:,"DelayCodeId"] = df["DelayCodeId"].fillna(0).astype("Int64")
+
+# Final overview after data conversion:
+df.info()
+
+# drop rows altough NaNs > 0.05% but it is the target variable.
+# Imputing would create artifical values and therefore would distort analysis
+
+df = df.dropna(subset=["FirstPumpArriving_AttendanceTime"])
+
+# Data Type
+
+# Convert Date and Time columns from object to dateime format
+
+date_cols = [
+    "DateOfCall",
+    "DateAndTimeMobilised",
+    "DateAndTimeMobile",
+    "DateAndTimeArrived"
+]
+
+for col in date_cols:
+    df[col] = pd.to_datetime(
+        df[col],
+        format="mixed",
+        errors="coerce",
+        dayfirst=True
+    )
+
+# select all columns with data type object
+object_cols = df.select_dtypes(include=["object"]).columns
+
+# convert to string
+df[object_cols] = df[object_cols].astype("string")
+
+# Column NumCalls: convert from float to integer
+df["NumCalls"] = df["NumCalls"].astype("Int64")
+
+# Rename Columns
+
+# show column names
+df.columns
+
+# rename columns for better readability / understanding
+
+df = df.rename(columns={
+    "CalYear_x" : "Year",
+    "HourOfCall_x" : "HourOfCall",
+    "IncGeo_BoroughName" : "BoroughName",
+    "IncGeo_WardNameNew" : "WardName"
+})
+
+# Final Summary Table
+
+# create summary table
+summary = pd.DataFrame({
+    "Column Name": df.columns,
+    "Data Type": df.dtypes.values,
+    "Missing Values": df.isna().sum().values,
+    "Missing (%)": (df.isna().sum().values / len(df) * 100).round(2),
+    "Unique Values": df.nunique().values
+})
+
+# sort by missing values
+summary = summary.sort_values(by="Missing (%)", ascending=False)
+
+# reset index
+summary = summary.reset_index(drop=True)
+
+# display dataset shape
+rows, cols = df.shape
+print(f"Dataset Shape: {rows} rows × {cols} columns\n")
+
+# display table nicely
+print(summary)
+
+# Save Data
+df.to_csv(
+    r"D:\PycharmProjects\Project-London-Fire-Brigade\data\df_Final_NEW.csv",
+    index=False
+)
 
