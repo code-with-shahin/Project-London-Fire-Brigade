@@ -413,3 +413,26 @@ df.to_csv(
     index=False
 )
 
+# Visualization
+# Preparation
+
+# add column for mobilisation is true or false
+df["HasMobilisation"] = df["ResourceMobilisationId"].notna()
+df["HasMobilisation"].value_counts()
+
+# filter only rows where HasMobilisation euqals True and create copy for further processing
+df_has_mobilisation = df.loc[(df["HasMobilisation"] == True)].copy()
+
+# create column to indicate whethere the 6 min service level agreement was met or not
+df_has_mobilisation["Met_6min"] = (df["FirstPumpArriving_AttendanceTime"] <= 360).astype(int)
+
+df_has_mobilisation.to_csv(r"D:\PycharmProjects\Project-London-Fire-Brigade\data\df_has_mobilisation.csv",
+    index=False
+)
+
+# create column for weekday for temporal analysis
+df_has_mobilisation["Weekday"] = df_has_mobilisation["DateOfCall"].dt.day_name()
+# ordered weekday
+weekday_order = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+
+
