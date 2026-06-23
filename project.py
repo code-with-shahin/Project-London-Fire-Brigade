@@ -435,4 +435,36 @@ df_has_mobilisation["Weekday"] = df_has_mobilisation["DateOfCall"].dt.day_name()
 # ordered weekday
 weekday_order = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 
+# Distribution Target Variable
+# create histogram
+sns.histplot(no_nans["FirstPumpArriving_AttendanceTime"], bins=50)
+plt.show()
+
+# Compliance Rate Westminster vs. Havering
+# Calculate compliance rate (percentage of incidents within 6 minutes)
+compliance = (
+    df_has_mobilisation
+    .groupby("BoroughName")["Met_6min"]  # group by borough
+    .mean()                              # compute share of incidents meeting target
+    .sort_values(ascending=False)        # sort from best to worst
+    * 100                                # convert to percentage
+)
+
+# Create bar chart
+plt.figure(figsize=(8, 5))
+plt.bar(compliance.index, compliance.values)
+
+# Add titles and labels
+plt.title("Compliance with 6-Minute Standard by Borough")
+plt.xlabel("Borough")
+plt.ylabel("Compliance Rate (%)")
+plt.ylim(0, 100)
+
+# Add percentage labels on top of each bar
+for i, v in enumerate(compliance.values):
+    plt.text(i, v + 1, f"{v:.1f}%", ha="center")
+
+# Improve layout and display plot
+plt.tight_layout()
+plt.show()
 
