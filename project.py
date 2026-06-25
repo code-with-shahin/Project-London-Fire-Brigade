@@ -468,3 +468,27 @@ for i, v in enumerate(compliance.values):
 plt.tight_layout()
 plt.show()
 
+# Response Time by Borough
+# Extract response time data for each borough
+westminster = df_has_mobilisation[
+    df_has_mobilisation["BoroughName"] == "WESTMINSTER"
+]["FirstPumpArriving_AttendanceTime"].dropna()
+
+havering = df_has_mobilisation[
+    df_has_mobilisation["BoroughName"] == "HAVERING"
+]["FirstPumpArriving_AttendanceTime"].dropna()
+
+# Create boxplot comparing both boroughs
+plt.figure(figsize=(8, 5))
+plt.boxplot(
+    [westminster, havering],               # data for both groups
+    tick_labels=["Westminster", "Havering"]  # x-axis labels
+)
+
+# Add title and axis label
+plt.title("Boxplot of Attendance Time by Borough")
+plt.ylabel("Attendance Time (seconds)")
+
+# Adjust layout and display plot
+plt.tight_layout()
+plt.show()
