@@ -492,3 +492,43 @@ plt.ylabel("Attendance Time (seconds)")
 # Adjust layout and display plot
 plt.tight_layout()
 plt.show()
+
+#Distribution of Response Time
+# Create a figure with a defined size (width=10, height=5)
+plt.figure(figsize=(10, 5))
+
+# Filter response time data for Westminster and remove missing values
+westminster = df_has_mobilisation[
+    df_has_mobilisation["BoroughName"] == "WESTMINSTER"
+]["FirstPumpArriving_AttendanceTime"].dropna()
+
+# Filter response time data for Havering and remove missing values
+havering = df_has_mobilisation[
+    df_has_mobilisation["BoroughName"] == "HAVERING"
+]["FirstPumpArriving_AttendanceTime"].dropna()
+
+# Plot histogram for Westminster
+# bins=50 controls the resolution of the histogram
+# alpha=0.5 makes the bars semi-transparent so both distributions are visible
+plt.hist(westminster, bins=50, alpha=0.5, label="Westminster")
+
+# Plot histogram for Havering (overlaid with Westminster)
+plt.hist(havering, bins=50, alpha=0.5, label="Havering")
+
+# Add title and axis labels for clarity
+plt.title("Distribution of First Pump Attendance Time")
+plt.xlabel("Attendance Time (seconds)")
+plt.ylabel("Frequency")
+
+# Add legend to distinguish between the two boroughs
+plt.legend()
+
+# Adjust layout to prevent overlapping labels
+plt.tight_layout()
+
+# Display the plot
+plt.show()
+
+# Adjust layout and display plot
+plt.tight_layout()
+plt.show()
