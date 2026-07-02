@@ -529,6 +529,160 @@ plt.tight_layout()
 # Display the plot
 plt.show()
 
-# Adjust layout and display plot
+# Days-of-Week Analysis
+
+weekday_compliance = (
+    df_has_mobilisation.groupby(["Weekday", "BoroughName"])["Met_6min"]
+    .mean()
+    .reset_index()
+)
+
+weekday_compliance["Weekday"] = pd.Categorical(
+    weekday_compliance["Weekday"],
+    categories=weekday_order,
+    ordered=True
+)
+
+weekday_compliance = weekday_compliance.sort_values("Weekday")
+
+plt.figure(figsize=(10, 5))
+
+for borough in ["WESTMINSTER", "HAVERING"]:
+    subset = weekday_compliance[weekday_compliance["BoroughName"] == borough]
+    plt.plot(subset["Weekday"], subset["Met_6min"] * 100, marker="o", label=borough)
+
+plt.title("Compliance Rate by Day of Week")
+plt.xlabel("Day of Week")
+plt.ylabel("Compliance Rate (%)")
+plt.legend()
 plt.tight_layout()
 plt.show()
+
+# Time-Based Demand Patterns (When incidents happen)
+
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+sns.set_theme(style="whitegrid")
+
+# Hourly counts
+hourly = df.groupby("HourOfCall")["IncidentNumber"].count()
+
+# Smooth with rolling mean
+hourly_smooth = hourly.rolling(window=3, center=True).mean()
+
+plt.figure(figsize=(12,5))
+plt.plot(hourly.index, hourly.values, marker="o", alpha=0.4, label="Raw")
+plt.plot(hourly.index, hourly_smooth, linewidth=3, label="Smoothed")
+
+plt.title("Fire Incidents by Hour of Day", fontsize=14, fontweight="bold")
+plt.xlabel("Hour of Day")
+plt.ylabel("Number of Incidents")
+plt.xticks(range(0,24))
+plt.legend()
+plt.show()
+
+# Heatmap: Hour vs Incident Group
+
+heat_data = df.pivot_table(
+    index="IncidentGroup",
+    columns="HourOfCall",
+    values="IncidentNumber",
+    aggfunc="count",
+    fill_value=0
+)
+
+plt.figure(figsize=(14,6))
+sns.heatmap(heat_data, cmap="YlOrRd", linewidths=0.3)
+
+plt.title("Incident Distribution: Hour vs Incident Group", fontweight="bold")
+plt.xlabel("Hour of Day")
+plt.ylabel("Incident Group")
+plt.show()
+
+# 6-Minute Target KPI
+
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+df_sub = df[df["BoroughName"].isin(["WESTMINSTER", "HAVERING"])].copy()
+
+target = 360
+
+sns.set_style("whitegrid")
+
+plt.figure(figsize=(12,6))
+
+# KDE plots
+sns.kdeplot(
+    data=df_sub,
+    x="FirstPumpArriving_AttendanceTime",
+    hue="BoroughName",
+    fill=True,
+    palette="rainbow",
+    alpha=0.4
+)
+
+# Target line
+plt.axvline(target, color="red", linestyle="--", linewidth=2)
+
+# --- Add borough labels (annotation) ---
+west_mean = df_sub[df_sub["BoroughName"]=="WESTMINSTER"]["FirstPumpArriving_AttendanceTime"].mean()
+hav_mean = df_sub[df_sub["BoroughName"]=="HAVERING"]["FirstPumpArriving_AttendanceTime"].mean()
+
+
+plt.title("6-Minute Target Compliance Distribution (Westminster vs Havering)")
+plt.xlabel("Response Time (seconds)")
+plt.ylabel("Density")
+
+plt.show()
+
+# Yearly Trend Analysis
+
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+df_sub = df[df["BoroughName"].isin(["WESTMINSTER", "HAVERING"])].copy()
+
+# Safe datetime handling
+df_sub["DateOfCall"] = pd.to_datetime(df_sub["DateOfCall"], errors="coerce")
+df_sub["Year"] = df_sub["DateOfCall"].dt.year
+
+df_sub = df_sub.dropna(subset=["Year"])
+
+# Convert seconds to minutes
+df_sub["ResponseTime_Min"] = df_sub["FirstPumpArriving_AttendanceTime"] / 60
+
+# Yearly aggregation
+yearly = df_sub.groupby(["Year", "BoroughName"])["ResponseTime_Min"].mean().reset_index()
+
+sns.set_style("whitegrid")
+
+plt.figure(figsize=(12,6))
+
+sns.lineplot(
+    data=yearly,
+    x="Year",
+    y="ResponseTime_Min",
+    hue="BoroughName",
+    marker="o",
+    palette=["red", "blue"]
+)
+
+plt.title("Yearly Trend of Fire Response Time (Minutes)")
+plt.xlabel("Year")
+plt.ylabel("Average Response Time (minutes)")
+plt.legend(title="Borough")
+
+plt.show()
+
+# Save Final Data
+
+# save data set for further processing in Power BI
+df.to_csv(
+    r"D:\PycharmProjects\Project-London-Fire-Brigade\data\df_final.csv",
+    index=False
+)
