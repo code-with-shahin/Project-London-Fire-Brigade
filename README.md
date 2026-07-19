@@ -121,6 +121,19 @@ The dashboard successfully identified:
 - High-risk scenarios
 - Structural operational inefficiencies
 
+## 👤 Author
+
+**Shahin Amirov**
+
+- Microsoft Certified: Power BI Data Analyst Associate (PL-300)
+- Data Analyst
+- LinkedIn: *https://www.linkedin.com/in/shahin-amirov/*
+- GitHub: *https://github.com/code-with-shahin*
+
+---
+
+## ⭐ If you found this project useful, feel free to star the repository!
+
 ![Executive Dashboard](images/dashboard.png)
 ![Executive Dashboard](images/temporal_analysis.png)
 ![Executive Dashboard](images/geographical_analysis.png)
