@@ -112,6 +112,7 @@ The analysis showed:
 - Westminster consistently outperforms Havering
 - Havering exhibits lower compliance rates and longer response times
 - Delays cluster in specific geographic and operational contexts
+- Certain incident types (e.g. fire and special services) have higher delay risks  
 
 The dashboard successfully identified:
 
