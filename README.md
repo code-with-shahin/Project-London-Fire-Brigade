@@ -1,141 +1,282 @@
-# 1. London Fire Brigade (LFB) Response Time Project
+# 🚒 London Fire Brigade (LFB) Response Time Analysis
 
-**1.1 Set up the Project Goal**
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-blue)
+![Status](https://img.shields.io/badge/Status-Completed-success)
 
-The goal is to analyse how quickly the LFB responds to incidents.
-
-Scope of Analysis:
-
-- **Mobilisation time**: how long it takes to dispatch a fire engine.
-- **Response time:** how long it takes to arrive at the incident
-
-Key questions to be answered:
-
-- How has response time changed over the years?
-- Which boroughs have the longest response times?
-- Which incident types take longer to respond to?
-- Are response times improving or worsening?
-
-**1.2. Analyse Two Datasets**
-
-Dataset 1. LFB Incident Records
-https://data.london.gov.uk/dataset/london-fire-brigade-incident-records-em8xy
-
-Contains: (incident details)
-
-- Incident date
-- Location (borough)
-- Incident type
-- Property type
-- Number of vehicles (pumps)
-
-Dataset 2. LFB Mobilisation Records
-https://data.london.gov.uk/dataset/london-fire-brigade-mobilisation-records-24r65
-
-Contains: (response time analysis)
-
-- Fire engine dispatched
-- Station location
-- mobilisation time
-- arrival time
-- response time
-
-# 2. Structure of the Project
-
-**Step 1. Data Exploration**
-
-- Loading the datasets.
-- Checking structure/columns.
-- Checking data types
-- Checking missing values.
-
-**Step 2. Data Cleaning**
-
-- Converting dates/times
-- Removing missing response times
-
-**Step 3. Merge the Datasets**
-
-To combine incident information + mobilisation times using:
-
-- Primary Key: Incident Number
-- Foreign Key: Mobilisation Number
-
-**Step 4. Data Visualisation**
-
-Main tools: Python (Matplotlib / Seaborn) and Power BI (Report view).
-
-**DataViz Objects:**
-
-- Response Time over Years
-- Response Time by Borough
-- Incident Types
-
-**Step 5. Data Analysis Objects**
-
-**1️. Response time trend:**
-
-Is response time increasing or decreasing since 2015?
-
-**2.Borough comparison:**
-
-Which boroughs have the fastest/slowest response?
-
-**3️. Incident type comparison (max/min):**
-
-Example types: Fire, False alarm, Special service…
-
-# 3. Main Contribution to the Project
-
-The project was conducted collaboratively across all stages:
-
-- Data preprocessing
-- Exploratory analysis
-- KPI development
-- Dashboard design
-- Interpretation of results
-
-The main contribution focused on:
-
-- Developing the dashboard structure and storytelling
-- Creating advanced Power BI visualisations
-- Designing KPIs and DAX measures
-- Translating technical findings into operational insights
-
-Particular attention was given to transforming complex operational data into a clear and decision-oriented analytical narrative.
-
-# 4. Results Obtained and Benchmark Comparison
-
-The benchmark used throughout the project was the London Fire Brigade’s 6-minute response target.
-
-The analysis showed:
-- Westminster consistently outperforms Havering
-- Havering exhibits lower compliance rates and longer response times
-- Delays cluster in specific geographic and operational contexts
-- Certain incident types (e.g. fire and special services) have higher delay risks  
-
-The dashboard successfully identified:
-
-- Temporal stress periods
-- Geographic bottlenecks
-- High-risk scenarios
-- Structural operational inefficiencies
-
-## 👤 Author
-
-**Shahin Amirov**
-
-- Microsoft Certified: Power BI Data Analyst Associate (PL-300)
-- Data Analyst
-- LinkedIn: *https://www.linkedin.com/in/shahin-amirov/*
-- GitHub: *https://github.com/code-with-shahin*
+An end-to-end data analytics project that investigates **London Fire Brigade emergency response performance** by combining incident and mobilisation datasets. The project leverages **Python** for data preparation and exploratory analysis and **Power BI** for interactive dashboarding and business intelligence.
 
 ---
 
-## ⭐ If you found this project useful, feel free to star the repository!
+# 📖 Table of Contents
+
+- [Project Overview](#project-overview)
+- [Project Objectives](#project-objectives)
+- [Datasets](#datasets)
+- [Project Workflow](#project-workflow)
+- [Dashboard & Visualizations](#dashboard--visualizations)
+- [Key Findings](#key-findings)
+- [Tools & Technologies](#tools--technologies)
+- [Project Contribution](#project-contribution)
+- [Repository Structure](#repository-structure)
+- [Author](#author)
+
+---
+
+# 📌 Project Overview
+
+The London Fire Brigade aims to respond to emergencies as quickly as possible. This project analyzes operational data to understand response performance, identify bottlenecks, and discover patterns that influence emergency response times.
+
+The analysis focuses on two critical metrics:
+
+- 🚒 **Mobilisation Time** – Time required to dispatch a fire engine after receiving an emergency call.
+- ⏱️ **Response Time** – Time required for the dispatched vehicle to arrive at the incident location.
+
+The project combines multiple datasets to build an interactive Power BI dashboard for operational monitoring and decision-making.
+
+---
+
+# 🎯 Project Objectives
+
+This analysis answers the following business questions:
+
+- How have response times changed over the years?
+- Which London boroughs experience the longest response times?
+- Which incident types require the longest response?
+- Are response times improving or deteriorating over time?
+- Which operational factors contribute to delayed responses?
+
+---
+
+# 📂 Datasets
+
+## Dataset 1 — LFB Incident Records
+
+Source:
+https://data.london.gov.uk/dataset/london-fire-brigade-incident-records-em8xy
+
+Contains information about each emergency incident, including:
+
+- Incident Number
+- Incident Date
+- Borough
+- Property Type
+- Incident Type
+- Number of Fire Engines (Pumps)
+- Location Information
+
+---
+
+## Dataset 2 — LFB Mobilisation Records
+
+Source:
+https://data.london.gov.uk/dataset/london-fire-brigade-mobilisation-records-24r65
+
+Contains operational response information, including:
+
+- Mobilisation Number
+- Fire Station
+- Dispatch Time
+- Arrival Time
+- Mobilisation Time
+- Response Time
+
+---
+
+# 🔄 Project Workflow
+
+## 1. Data Exploration
+
+- Import datasets
+- Inspect columns and data types
+- Identify missing values
+- Understand dataset relationships
+
+---
+
+## 2. Data Cleaning
+
+- Convert date and time formats
+- Handle missing values
+- Remove invalid records
+- Standardize categorical variables
+
+---
+
+## 3. Data Integration
+
+The datasets were merged using relational keys to create a unified analytical model.
+
+- **Primary Key:** Incident Number
+- **Foreign Key:** Mobilisation Number
+
+---
+
+## 4. Exploratory Data Analysis (EDA)
+
+Python was used to investigate trends and distributions, including:
+
+- Response time trends
+- Incident frequency
+- Borough comparisons
+- Incident type analysis
+- Distribution of mobilisation times
+
+---
+
+## 5. Dashboard Development
+
+Power BI was used to build an interactive dashboard featuring:
+
+- Executive KPI cards
+- Year-over-year response trends
+- Borough performance comparison
+- Incident type analysis
+- Property type breakdown
+- Interactive slicers and filters
+
+---
+
+# 📊 Dashboard & Visualizations
+
+The dashboard includes the following analytical views:
+
+- 📈 Response Time Trends
+- 🗺️ Geographical Analysis
+- 🚒 Incident & Property Analysis
+- 📊 Key Performance Indicators (KPIs)
+- 🔍 Operational Drivers
+
+---
+
+# 🔍 Key Findings
+
+Using the London Fire Brigade's **6-minute response target** as the benchmark, the analysis revealed:
+
+- Westminster consistently achieves faster response times than Havering.
+- Havering records the lowest compliance with the response target.
+- Certain incident types are associated with longer response times.
+- Response delays are concentrated in specific boroughs and operational scenarios.
+- Geographic and temporal patterns indicate potential resource allocation challenges.
+
+The dashboard enables stakeholders to identify:
+
+- Peak operational periods
+- Geographic bottlenecks
+- High-risk incident categories
+- Areas requiring operational improvement
+
+---
+
+# 🛠 Tools & Technologies
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Jupyter Notebook
+- Power BI
+- DAX
+- Power Query
+
+---
+
+# 👥 Project Contribution
+
+This project was completed collaboratively across all stages of the analytics lifecycle, including:
+
+- Data preprocessing
+- Exploratory data analysis
+- KPI development
+- Dashboard design
+- Business interpretation
+
+### My primary contributions
+
+- Designed the Power BI data model
+- Developed interactive dashboards
+- Created DAX measures and KPIs
+- Built analytical storytelling and dashboard navigation
+- Translated analytical findings into business insights
+
+The focus was on transforming complex operational data into a clear, actionable, and decision-oriented reporting solution.
+
+---
+
+# 📁 Repository Structure
+
+```
+London-Fire-Brigade-Response-Time-Analysis
+│
+├── data/
+│   ├── raw/
+│   └── processed/
+│
+├── notebooks/
+│
+├── powerbi/
+│
+├── images/
+│
+├── README.md
+│
+└── requirements.txt
+```
+
+---
+
+# 📸 Dashboard Preview
+
+## Executive Dashboard
 
 ![Executive Dashboard](images/dashboard.png)
-![Executive Dashboard](images/temporal_analysis.png)
-![Executive Dashboard](images/geographical_analysis.png)
-![Executive Dashboard](images/incident_property.png)
-![Executive Dashboard](images/key_drivers.png)
+
+---
+
+## Temporal Analysis
+
+![Temporal Analysis](images/temporal_analysis.png)
+
+---
+
+## Geographical Analysis
+
+![Geographical Analysis](images/geographical_analysis.png)
+
+---
+
+## Incident & Property Analysis
+
+![Incident Property](images/incident_property.png)
+
+---
+
+## Key Drivers
+
+![Key Drivers](images/key_drivers.png)
+
+---
+
+# 👤 Author
+
+### Shahin Amirov
+
+**Microsoft Certified: Power BI Data Analyst Associate (PL-300)**
+
+Data Analyst | Power BI | SQL | Python
+
+🔗 LinkedIn:
+https://www.linkedin.com/in/shahin-amirov/
+
+💻 GitHub:
+https://github.com/code-with-shahin
+
+---
+
+## ⭐ Support
+
+If you found this project helpful or interesting, consider giving it a ⭐ on GitHub!
+
+Feedback and suggestions are always welcome.
