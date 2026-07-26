@@ -9,18 +9,19 @@ An end-to-end data analytics project that investigates **London Fire Brigade eme
 
 ---
 
-# 📖 Table of Contents
+## 📖 Table of Contents
 
-- [Project Overview](#project-overview)
-- [Project Objectives](#project-objectives)
-- [Datasets](#datasets)
-- [Project Workflow](#project-workflow)
-- [Dashboard & Visualizations](#dashboard--visualizations)
-- [Key Findings](#key-findings)
-- [Tools & Technologies](#tools--technologies)
-- [Project Contribution](#project-contribution)
-- [Repository Structure](#repository-structure)
-- [Author](#author)
+- [Project Overview](#-project-overview)
+- [Project Objectives](#-project-objectives)
+- [Datasets](#-datasets)
+- [Project Workflow](#-project-workflow)
+- [Dashboard & Visualizations](#-dashboard--visualizations)
+- [Key Findings](#-key-findings)
+- [Tools & Technologies](#-tools--technologies)
+- [Project Contribution](#-project-contribution)
+- [Repository Structure](#-repository-structure)
+- [Dashboard Preview](#-dashboard-preview)
+- [Author](#-author)
 
 ---
 
