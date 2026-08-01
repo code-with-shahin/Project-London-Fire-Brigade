@@ -221,6 +221,8 @@ London-Fire-Brigade-Response-Time-Analysis
 │
 ├── images/
 │
+├── python_visuals/
+│
 ├── README.md
 │
 └── requirements.txt
